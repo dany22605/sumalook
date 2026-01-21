@@ -76,7 +76,7 @@ li {
     justify-content: center;
     align-items: center;
 
-    background-image: url('../Images/portada.png');
+    background-image: url('/Images/portada.png');
     background-size: cover;      /* La imagen cubre todo el hero */
     background-position: center; /* Centrada */
     background-repeat: no-repeat;
