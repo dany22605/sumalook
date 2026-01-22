@@ -18,3 +18,25 @@
     hamburger.classList.toggle('active');
   });
 
+  document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+  
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+  
+    const response = await fetch("https://formspree.io/f/mpqqkqzd", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+  
+    if (response.ok) {
+      alert("Mensaje enviado correctamente");
+      this.reset();
+    } else {
+      alert("Error al enviar el formulario");
+    }
+  });
