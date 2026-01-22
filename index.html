@@ -130,17 +130,19 @@
   
     <div class="contact-grid">
       <div class="contact-form"> 
-           <form  
-    action="https://formspree.io/f/mpqqkqzd"
-    method="POST"
-    class="contact-form"
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Teléfono">
-        <textarea placeholder="Mensaje"></textarea>
-        <button class="btn btn-primary">Enviar</button>
-     
-   </form> 
+        <form 
+        action="https://formspree.io/f/mpqqkqzd"
+        method="POST"
+        class="contact-form">
+      
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+      
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      
+      </form>
      </div> 
       <div class="contact-info">
         <p><strong>Teléfono:</strong> +34 618 46 08 43</p>
